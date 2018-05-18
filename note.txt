@@ -1,0 +1,60 @@
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git
+$ touch index.html
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git
+$ touch script.pl
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git
+$ touch note.txt
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git
+$ git init
+Initialized empty Git repository in C:/Users/IBM_ADMIN/Documents/GitHub/hello_git/.git/
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+        note.txt
+        script.pl
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git (master)
+$ git add .
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git (master)
+$ git commit -m 'created files'
+[master (root-commit) e72a57e] created files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 note.txt
+ create mode 100644 script.pl
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Santhosh@IBM892-PC0BRMEJ MINGW64 ~/Documents/GitHub/hello_git (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
